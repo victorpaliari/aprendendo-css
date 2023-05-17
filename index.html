@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: beige;
+        height: 150px;
+        
+    }
+    .elemento {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    }
+
+    .conteiner-secundario {
+        background-color: beige;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        height: 1px;
+        
+    }
+    
+    .elemento-secundario {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+
+    }
+
+    .conteiner-terciario {
+    background-color: beige;
+    height: 130px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    }
+
+    .elemento-terciario {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+
+    }
+
+
+</style>
+
+<body>
+     <div class="container"> 
+        <div class="elemento"></div> 
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+    </div>
+        <div class="conteiner-secundario">
+        <div class="elemento-secundario"></div>
+        <div class="elemento-secundario"></div>
+        <div class="elemento-secundario"></div>
+    </div>
+
+        <div class="conteiner-terciario">
+        <div class="elemento-terciario"> </div>
+        <div class="elemento-terciario"></div>
+        <div class="elemento-terciario"></div>
+        <div class="elemento-terciario"></div>
+    </div>
+</body>
+</html>
